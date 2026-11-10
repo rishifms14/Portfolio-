@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rishikesh — Finance &amp; Operations Leader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06100e;--bg2:#0c1a17;--line:#1b302b;--tx:#e8f2ef;--mut:#8aa59e;--ac:#3ddc97;--ac2:#f2c14e;--r:14px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+:root[data-theme="light"]{--bg:#f4f9f7;--bg2:#fff;--line:#d6e5e0;--tx:#0d1d19;--mut:#52695f;--ac:#0a8a5b;--ac2:#a67700}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f4f9f7;--bg2:#fff;--line:#d6e5e0;--tx:#0d1d19;--mut:#52695f;--ac:#0a8a5b;--ac2:#a67700}}
+:root[data-theme="dark"]{--bg:#06100e;--bg2:#0c1a17;--line:#1b302b;--tx:#e8f2ef;--mut:#8aa59e;--ac:#3ddc97;--ac2:#f2c14e}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 'Space Grotesk',system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--ac);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h2{font-size:clamp(28px,5vw,40px);line-height:1.15;margin:0 0 30px;letter-spacing:-.02em}
+h2 small{display:block;font:500 13px 'JetBrains Mono',monospace;color:var(--ac);margin-bottom:10px;letter-spacing:0}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;font-size:20px}.logo span{color:var(--ac)}
+.links{display:flex;gap:4px;align-items:center}
+.links a{padding:6px 11px;border-radius:8px;color:var(--mut);font-size:14px;transition:color .2s,background .2s}
+.links a:hover,.links a.on{color:var(--tx);background:var(--bg2)}
+#theme{background:none;border:1px solid var(--line);color:var(--tx);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:15px}
+@media(max-width:720px){.links a:not(.keep){display:none}}
+.hero{min-height:100svh;display:flex;align-items:center;padding:110px 0 60px;position:relative}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(520px 320px at 78% 22%,color-mix(in srgb,var(--ac) 18%,transparent),transparent 70%),radial-gradient(420px 300px at 10% 85%,color-mix(in srgb,var(--ac2) 12%,transparent),transparent 70%);animation:drift 14s ease-in-out infinite alternate;pointer-events:none}
+@keyframes drift{to{transform:translate3d(-24px,18px,0)}}
+.hero .wrap{position:relative}
+.badge{display:inline-flex;gap:9px;align-items:center;border:1px solid var(--line);background:var(--bg2);padding:6px 14px;border-radius:99px;font-size:13px;color:var(--mut)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ac);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px #3ddc9700}0%{box-shadow:0 0 0 0 #3ddc9788}}
+h1{font-size:clamp(44px,11vw,96px);line-height:1;letter-spacing:-.04em;margin:22px 0 14px;word-break:break-word}
+h1 .ch{display:inline-block;opacity:0;transform:translateY(40px);animation:up .7s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.title{font-size:clamp(18px,3vw,26px);font-weight:500;margin-bottom:6px}
+.role{font:400 clamp(14px,2.4vw,18px) 'JetBrains Mono',monospace;color:var(--ac);min-height:1.6em}
+.role::after{content:"▍";margin-left:3px;animation:bl 1s steps(2) infinite}
+@keyframes bl{50%{opacity:0}}
+.lead{max-width:620px;color:var(--mut);margin:18px 0 30px;font-size:17px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{padding:12px 22px;border-radius:10px;font-weight:500;border:1px solid var(--line);transition:transform .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--ac)}
+.btn.p{background:var(--ac);color:#04140d;border-color:var(--ac)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px}
+.stat{border-left:2px solid var(--ac);padding-left:14px}
+.stat b{display:block;font-size:clamp(26px,5vw,40px);line-height:1.1}
+.stat span{color:var(--mut);font-size:13px}
+@media(max-width:620px){.stats{grid-template-columns:repeat(2,1fr)}}
+.about{display:grid;grid-template-columns:1.15fr 1fr;gap:34px;align-items:start}
+@media(max-width:820px){.about{grid-template-columns:1fr}}
+.about p{color:var(--mut);margin:0 0 16px}.about p b{color:var(--tx);font-weight:500}
+.term{background:#040a09;color:#cfeee2;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;font:13.5px 'JetBrains Mono',monospace}
+.term .bar{display:flex;gap:7px;padding:11px 14px;border-bottom:1px solid #14251f}
+.term .bar i{width:11px;height:11px;border-radius:50%;background:#26413a}
+.term pre{margin:0;padding:16px;white-space:pre-wrap;line-height:1.8;font:inherit}
+.term .c{color:#3ddc97}.term .y{color:#f2c14e}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font:500 12.5px 'JetBrains Mono',monospace;padding:5px 11px;border-radius:7px;background:color-mix(in srgb,var(--ac) 10%,transparent);border:1px solid color-mix(in srgb,var(--ac) 28%,transparent)}
+.tag.l{background:color-mix(in srgb,var(--ac2) 10%,transparent);border-color:color-mix(in srgb,var(--ac2) 35%,transparent)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.filters button{font:500 14px 'Space Grotesk',sans-serif;background:none;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:7px 18px;cursor:pointer;transition:all .2s}
+.filters button.on{background:var(--ac);color:#04140d;border-color:var(--ac)}
+.tag.hide{display:none}
+.tl{position:relative;padding-left:30px}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:0;width:2px;background:var(--line)}
+.tl .fill{position:absolute;left:6px;top:6px;width:2px;height:0;background:var(--ac)}
+.job{position:relative;margin-bottom:22px;transition:border-color .25s}
+.job::before{content:"";position:absolute;left:-30px;top:26px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--ac)}
+.job:hover{border-color:var(--ac)}
+.job.now::before{background:var(--ac)}
+.jh{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.jh h3{margin:0;font-size:20px}
+.jh span{font:12.5px 'JetBrains Mono',monospace;color:var(--ac2)}
+.co{color:var(--mut);margin:2px 0 0;font-size:14.5px}
+.job ul{margin:14px 0 0;padding-left:18px;color:var(--mut)}.job li{margin-bottom:7px}.job li b{color:var(--tx);font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.card h3{margin:0 0 14px;font-size:17px}
+.card ul{margin:0;padding-left:18px;color:var(--mut)}.card li{margin-bottom:7px}
+.edu{display:grid;gap:12px}
+.edu div{border-bottom:1px solid var(--line);padding-bottom:12px}.edu div:last-child{border:0;padding:0}
+.edu b{display:block;font-weight:500}.edu em{font-style:normal;color:var(--mut);font-size:14px}
+.contact{text-align:center}
+.contact p{color:var(--mut);max-width:520px;margin:0 auto 26px}
+.mail{display:inline-block;font-size:clamp(18px,4vw,30px);font-weight:700;color:var(--ac);margin-bottom:26px;word-break:break-all}
+.contact .btns{justify-content:center}
+footer{border-top:1px solid var(--line);padding:26px 0 34px;text-align:center;color:var(--mut);font-size:14px}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,h1 .ch{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">R<span>.</span></a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience" class="keep">Experience</a><a href="#wins">Awards</a><a href="#contact" class="keep">Contact</a><button id="theme" aria-label="Toggle theme">☾</button></div></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<div class="badge"><i class="dot"></i>Head – Finance &amp; Operations · Gurugram, India</div>
+<h1 id="name" aria-label="Rishikesh">Rishikesh</h1>
+<div class="title">Finance &amp; Operations Leader</div>
+<div class="role" id="role"></div>
+<p class="lead">12+ years across fintech, real estate and telecom. I build financial frameworks, automate reconciliation and design the dashboards that CXOs and boards decide with.</p>
+<div class="btns"><a class="btn p" href="#experience">View experience →</a><a class="btn" href="mailto:rishikesh.14@fms.edu">Email me</a><a class="btn" href="https://linkedin.com/in/rishifms2014" target="_blank" rel="noopener">LinkedIn</a></div>
+<div class="stats">
+<div class="stat"><b data-n="12" data-s="+">0</b><span>Years of experience</span></div>
+<div class="stat"><b data-n="3000" data-s="+ Cr" data-p="₹">0</b><span>Reconciliation overseen</span></div>
+<div class="stat"><b data-n="75" data-s="%">0</b><span>Faster closure cycle</span></div>
+<div class="stat"><b data-n="13">0</b><span>Team members led</span></div>
+</div></div></header>
+
+<section id="about"><div class="wrap"><h2 class="rv"><small>About</small>Behind the numbers.</h2>
+<div class="about rv"><div>
+<p>I lead Finance &amp; Operations at <b>Arthmate Financing</b>, covering FP&amp;A, treasury, investor reporting and loan book reconciliation across on-book, off-book and co-lending portfolios.</p>
+<p>My background is unusual for finance: a <b>B.E. in Computer Engineering from NSIT</b> and an <b>MBA from FMS Delhi</b>. It shows in my work on <b>automation, SQL, Power BI and API-driven MIS</b>.</p>
+<p>Earlier roles span <b>Airtel Payments Bank</b>, <b>Ashiana Housing</b> (NSE &amp; BSE listed) and a startup I co-founded.</p></div>
+<div class="term"><div class="bar"><i></i><i></i><i></i></div><pre><span class="c">~</span> whoami
+<span class="y">rishikesh — finance &amp; operations leader</span>
+<span class="c">~</span> cat focus.txt
+FP&amp;A · Investor Relations · Reconciliation
+MIS · Process Automation
+<span class="c">~</span> echo $CURRENT_ROLE
+<span class="y">head_finance_ops @ arthmate</span></pre></div></div></div></section>
+
+<section id="skills"><div class="wrap"><h2 class="rv"><small>Skills</small>Core competencies.</h2>
+<div class="filters rv"><button class="on" data-f="all">All</button><button data-f="fin">Finance</button><button data-f="ops">Lending Ops</button><button data-f="tech">Tech &amp; Automation</button></div>
+<div class="tags rv" id="tags">
+<span class="tag" data-c="fin">FP&amp;A &amp; Business Finance</span><span class="tag" data-c="fin">P&amp;L, Balance Sheet &amp; Cash Flow</span><span class="tag" data-c="fin">Strategic Planning &amp; Budgeting</span><span class="tag" data-c="fin">Investor Relations &amp; Fundraising</span><span class="tag" data-c="fin">Board &amp; Management Reporting</span><span class="tag" data-c="fin">Treasury &amp; Cash Flow</span><span class="tag" data-c="fin">Financial Controls &amp; Internal Audit</span>
+<span class="tag l" data-c="ops">Lender Due Diligence (LDD/FDD)</span><span class="tag l" data-c="ops">Loan Book Reconciliation</span><span class="tag l" data-c="ops">Co-lending &amp; Operations</span><span class="tag l" data-c="ops">Credit Risk &amp; Policy Frameworks</span><span class="tag l" data-c="ops">Regulatory &amp; Compliance Oversight</span>
+<span class="tag" data-c="tech">Excel (Advanced)</span><span class="tag" data-c="tech">Power BI</span><span class="tag" data-c="tech">SQL</span><span class="tag" data-c="tech">MIS Framework &amp; Dashboards</span><span class="tag" data-c="tech">Financial Automation &amp; APIs</span><span class="tag" data-c="tech">Process Improvement &amp; Automation</span><span class="tag" data-c="tech">Product &amp; Technology Collaboration</span>
+</div></div></section>
+
+<section id="experience"><div class="wrap"><h2 class="rv"><small>Experience</small>Career timeline.</h2>
+<div class="tl" id="tl"><div class="fill" id="fill"></div>
+
+<article class="card job now rv"><div class="jh"><h3>Head – Finance &amp; Operations</h3><span>Mar 2025 – Present</span></div><p class="co">Arthmate Financing India Pvt. Ltd. · Gurugram</p>
+<ul><li>Lead a <b>13-member</b> Finance &amp; Operations team across financial management, process excellence and cross-functional coordination.</li><li>Oversaw <b>₹3,000+ Cr</b> reconciliation (on/off-book, co-lending); automated closures cut cycle time by <b>75%</b>.</li><li>Designed investor and board dashboards covering KPIs, growth levers and cash flow forecasts.</li><li>Ran scenario modelling for new product lines and partnerships; integrated MIS with operational systems for real-time visibility.</li></ul></article>
+
+<article class="card job rv"><div class="jh"><h3>AVP – Finance &amp; Operations</h3><span>Jan 2019 – Mar 2025</span></div><p class="co">Arthimpact Digital Loans Pvt. Ltd. · Gurugram</p>
+<ul><li>Directed planning, forecasting and AOP modelling across multiple product lines over six years.</li><li>Managed <b>₹500+ Cr</b> portfolio reconciliation with zero variance and timely compliance.</li><li>Grew margins <b>12% YoY</b> through variance analysis and cost optimisation.</li><li>Supported fundraising rounds with investor presentations and due diligence coordination.</li><li>Automated fund flow and data processes, cutting manual effort by <b>50%</b>.</li></ul></article>
+
+<article class="card job rv"><div class="jh"><h3>Co-Founder</h3><span>May 2017 – Jan 2019</span></div><p class="co">Sreepali Consultant · Gurugram</p>
+<ul><li>Managed <b>₹10 Cr AUM</b> with a ₹10 Lacs SIP base; onboarded <b>200+</b> investment clients in year one.</li><li>Built financial plans including break-even analysis and long-term solvency models.</li></ul></article>
+
+<article class="card job rv"><div class="jh"><h3>Manager – Finance &amp; Investor Relations</h3><span>Nov 2015 – May 2017</span></div><p class="co">Ashiana Housing Limited (NSE &amp; BSE) · New Delhi</p>
+<ul><li>Worked with the MD and CFO on project evaluations and budgeting for <b>₹2,000+ Cr</b> residential projects.</li><li>Prepared investor presentations for NSE and BSE.</li><li>Streamlined MIS and board reporting, cutting cycle time by <b>25%</b>.</li></ul></article>
+
+<article class="card job rv"><div class="jh"><h3>Management Trainee – FP&amp;A</h3><span>Apr 2014 – Nov 2015</span></div><p class="co">Airtel Payments Bank · Mumbai</p>
+<ul><li>Supported cost management initiatives yielding about <b>₹40 Cr</b> in annual savings.</li><li>Co-led reporting automation, improving data accuracy by <b>30%</b>.</li><li>Awarded <b>People’s Person of the Year</b> for cross-functional collaboration.</li></ul></article>
+</div></div></section>
+
+<section id="wins"><div class="wrap"><h2 class="rv"><small>Awards</small>Distinctions.</h2>
+<div class="grid rv">
+<div class="card"><h3>🏆 Professional</h3><ul><li>People’s Person of the Year, Airtel Payments Bank</li><li>Cost optimisation leader: about ₹40 Cr in annual savings</li><li>Led automation of financial and operational controls, improving efficiency by 30%</li><li>Contributed to MFI and payments sector acquisition evaluations</li></ul></div>
+<div class="card"><h3>🎓 Academic</h3><ul><li>98.32 percentile in CAT</li><li>Top 10 APAC, Bloomberg Aptitude Test (98th percentile)</li><li>National Winner, FE@Campus Mastermind Business Strategy Competition</li><li>Winner, Mahindra “Live Young, Live Free” case study competition</li><li>97.01 percentile in GATE, 96.21 percentile in AIEEE</li></ul></div>
+<div class="card"><h3>📚 Education</h3><div class="edu"><div><b>MBA, Finance &amp; Operations</b><em>FMS, Delhi University · 2012–2014</em></div><div><b>B.E., Computer Engineering</b><em>NSIT, Delhi University · 2008–2012</em></div></div></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap contact"><h2 class="rv"><small>Contact</small>Let’s talk finance.</h2>
+<p class="rv">For leadership roles, advisory work or a conversation about finance and operations, email is the fastest way to reach me.</p>
+<a class="mail rv" href="mailto:rishikesh.14@fms.edu">rishikesh.14@fms.edu</a>
+<div class="btns rv"><a class="btn" href="https://linkedin.com/in/rishifms2014" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="tel:+918130599399">Call +91 81305 99399</a></div></div></section>
+<footer>© Rishikesh · Finance &amp; Operations Leader · Gurugram, India</footer>
+
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+var n=document.getElementById('name'),t=n.textContent;n.textContent='';
+t.split('').forEach(function(c,i){var s=document.createElement('span');s.className='ch';s.setAttribute('aria-hidden','true');s.textContent=c;s.style.animationDelay=(i*55)+'ms';n.appendChild(s)});
+var roles=['FP&A','Investor Relations','Reconciliation & MIS','Process Automation'],ri=0,ci=0,del=false,el=document.getElementById('role');
+function type(){var w=roles[ri];if(rm){el.textContent=roles.join(' · ');return}
+ci+=del?-1:1;el.textContent=w.slice(0,ci);var d=del?35:75;
+if(!del&&ci===w.length){del=true;d=1400}else if(del&&ci===0){del=false;ri=(ri+1)%roles.length;d=300}
+setTimeout(type,d)}
+type();
+function count(e){var end=parseFloat(e.dataset.n),s=e.dataset.s||'',p=e.dataset.p||'',st=null;
+if(rm){e.textContent=p+Math.round(end).toLocaleString('en-IN')+s;return}
+function f(ts){st=st||ts;var q=Math.min((ts-st)/1500,1),v=end*(1-Math.pow(1-q,3));e.textContent=p+Math.round(v).toLocaleString('en-IN')+(q===1?s:'');if(q<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+var so=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){count(x.target);so.unobserve(x.target)}})},{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(function(e){so.observe(e)});
+document.querySelectorAll('.filters button').forEach(function(b){b.addEventListener('click',function(){
+document.querySelectorAll('.filters button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+var f=b.dataset.f;document.querySelectorAll('#tags .tag').forEach(function(g){g.classList.toggle('hide',f!=='all'&&g.dataset.c!==f)})})});
+var tl=document.getElementById('tl'),fill=document.getElementById('fill');
+function draw(){var r=tl.getBoundingClientRect(),h=innerHeight,p=Math.max(0,Math.min(r.height,h*0.6-r.top));fill.style.height=p+'px'}
+addEventListener('scroll',draw,{passive:true});draw();
+var links=document.querySelectorAll('.links a[href^="#"]'),secs=[].map.call(links,function(a){return document.querySelector(a.getAttribute('href'))});
+var no=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+secs.forEach(function(s){no.observe(s)});
+var root=document.documentElement,btn=document.getElementById('theme');
+function dark(){var a=root.getAttribute('data-theme');return a?a==='dark':!matchMedia('(prefers-color-scheme:light)').matches}
+btn.textContent=dark()?'☾':'☀';
+btn.addEventListener('click',function(){var d=dark();root.setAttribute('data-theme',d?'light':'dark');btn.textContent=d?'☀':'☾'});
+})();
+</script>
+</body>
+</html>
